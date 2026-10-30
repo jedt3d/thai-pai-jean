@@ -63,3 +63,11 @@
 - `Songzanlin_2026_Addition.kml` contains only the new reference point; it is provided as a portable copy, not needed to duplicate the already-added live marker.
 - Local browser checks at 320,390,768,1440px: new cover loaded, no overlap of cover/caption with facts, no horizontal page overflow. Comparison tables scroll within their own containers. Both proposal tables rendered six/eight rows respectively. Existing app structural and JavaScript syntax checks passed.
 - Cache version is `tpj-v5`; new cover and supplemental KML are cached. Main itinerary model remains six original days until the user selects the replacement plan.
+
+## 30 Oct 2026 · fixed six-day core (9–14 Dec), optional city extension
+
+- Main data now contains six days, 9–14 Dec: Kunming arrival; direct train to Shangri-La; light day; Songzanlin priority day; return Kunming; fly home. Shangri-La nights 10–12; Kunming nights 9 and 13.
+- Optional extension replaces flight home on 14 Dec with a city rest day, adds city sightseeing on 15 Dec, and departure on 16 Dec. Two extra Kunming nights. No essential temple visit depends on extension.
+- Removed obsolete six-versus-eight-day proposal from active HTML/guide. Historical Dali appendix/cards remain explicitly outside current trip. Checklist uses a new storage key to avoid reusing completed tasks with different meanings.
+- Local browser: six date tabs 9–14; 12 Dec renders Songzanlin; six core rows and three extension rows; nine credited photo cards. At 390 and 1440 viewport widths, page does not overflow; caption remains above trip facts. No browser errors.
+- Structural, asset, font, KML and JavaScript checks pass. Actual December trains/flights, room prices and revised budget are not confirmed.

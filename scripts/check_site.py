@@ -17,12 +17,13 @@ s=Scan();s.feed((root/'index.html').read_text())
 for x in s.refs:assert x in s.ids,x
 for x in s.local:assert (root/x).is_file(),x
 j=(root/'data.js').read_text();data=json.loads(j[len('window.TRIP='):-1])
-assert len(data['days'])==6 and len(data['places'])==8
-assert sum(len(d['events'])for d in data['days'])==36
+assert len(data['days'])==6 and len(data['places'])==9
+assert [d['day'] for d in data['days']]==['9','10','11','12','13','14']
+assert any('松赞林寺' in e['title'] for d in data['days'] if d['day']=='12' for e in d['events'])
 assert all(d['events']for d in data['days'])
 assert '1lE7UFUHc2npUgthw_yn-MtbtvPUCnrU'in(root/'app.js').read_text()
 json.loads((root/'manifest.webmanifest').read_text())
-print('PASS: HTML ids, internal links, assets, manifest, 6 days / 36 events / 8 locations, user My Maps ID')
+print('PASS: HTML ids, internal links, assets, manifest, 6 days (9–14 Dec) / Songzanlin on 12 Dec / 9 locations, user My Maps ID')
 # Photo credits and self-hosted fonts must remain valid in the offline guide.
 for place in data['places']:
  assert all(place.get(k) for k in ['cn','pinyin','name','fullName']), place['id']
@@ -39,7 +40,7 @@ for asset in list((root/'assets/fonts').glob('*.woff2'))+list((root/'assets/phot
  assert str(asset.relative_to(root)) in sw, asset
 assert 'IBM Plex Sans Thai Looped' in css
 assert len({p['id'] for p in data['locations']})==len(data['locations'])
-print('PASS: trilingual place data, 8 credited JPEGs, WOFF2 fonts and offline asset coverage')
+print('PASS: trilingual place data, 9 credited photo cards, WOFF2 fonts and offline asset coverage')
 
 import xml.etree.ElementTree as ET
 ns={'k':'http://www.opengis.net/kml/2.2'}
