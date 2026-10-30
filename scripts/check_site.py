@@ -23,3 +23,20 @@ assert all(d['events']for d in data['days'])
 assert '1lE7UFUHc2npUgthw_yn-MtbtvPUCnrU'in(root/'app.js').read_text()
 json.loads((root/'manifest.webmanifest').read_text())
 print('PASS: HTML ids, internal links, assets, manifest, 6 days / 36 events / 8 locations, user My Maps ID')
+# Photo credits and self-hosted fonts must remain valid in the offline guide.
+for place in data['places']:
+ assert all(place.get(k) for k in ['cn','pinyin','name','fullName']), place['id']
+ photo=place['photo']
+ assert (root/photo['src']).read_bytes().startswith(b'\xff\xd8'), photo['src']
+ assert all(photo.get(k) for k in ['author','source','license','licenseUrl','caption']), place['id']
+ assert photo['source'].startswith('https://commons.wikimedia.org/wiki/File:'), place['id']
+ assert photo['licenseUrl'].startswith('https://creativecommons.org/'), place['id']
+css=(root/'assets/fonts/fonts.css').read_text()
+for font in re.findall(r'url\("([^\"]+)"\)',css):
+ assert (root/'assets/fonts'/font).read_bytes().startswith(b'wOF2'), font
+sw=(root/'sw.js').read_text()
+for asset in list((root/'assets/fonts').glob('*.woff2'))+list((root/'assets/photos').glob('*.jpg')):
+ assert str(asset.relative_to(root)) in sw, asset
+assert 'IBM Plex Sans Thai Looped' in css
+assert len({p['id'] for p in data['locations']})==len(data['locations'])
+print('PASS: trilingual place data, 8 credited JPEGs, WOFF2 fonts and offline asset coverage')
