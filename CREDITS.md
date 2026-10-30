@@ -77,3 +77,12 @@ Reference images are historical and may show other seasons. Images are served as
 ## IBM Plex fonts
 
 Self-hosted original WOFF2 files from https://github.com/IBM/plex/tree/master/packages under the SIL Open Font License 1.1. Per-package licence texts are in `site/assets/fonts/`. Thai body: IBM Plex Sans Thai Looped 400/600. Thai headings: IBM Plex Sans Thai 500/600. Latin/Pinyin: IBM Plex Sans 400/600. Simplified Chinese: IBM Plex Sans SC 400 (browser synthesis for heavier weights). No runtime font service.
+
+## Cover: Three Pagodas and their reflection
+
+- File: `assets/photos/cover-pagodas.jpg`
+- Photographer: Ngguls
+- Source: https://commons.wikimedia.org/wiki/File:20260223_Dali_Chongsheng_Temple,_viewing_the_Three_Pagodas_and_their_reflections_from_the_Juying_Pool_02.jpg
+- Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Taken: 2026-02-23 16:23:51
+- Commons thumbnail, displayed uncropped. Reference scene, not a promise of December weather or reflection.

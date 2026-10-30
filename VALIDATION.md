@@ -41,3 +41,13 @@
 - `scripts/check_site.py` now verifies trilingual place fields, photo files/attribution, WOFF2 files and service-worker coverage for all photos/fonts. Structural and JavaScript syntax checks passed.
 - Cache is `tpj-v3`, including local fonts and photos (approximately 5.7 MB total assets). Offline first-install success requires enough storage and successful asset downloads.
 - Final offline check: stopped the local preview server, reloaded successfully, verified all eight photo files rendered from cache, and switched to day 14 with ten events. Saved-only still showed the original one saved card.
+
+## Cover overlap and mobile readability fix
+
+- Reproduced on the published `382b71f` version at 1440px: the absolutely positioned SVG extended 198.63px below its `.cover-art` grid cell into the facts row. The caption itself remained inside the cell. The failed condition was `coverMedia.bottom <= coverFacts.top && caption.bottom <= coverFacts.top`.
+- Removed the absolute SVG layout and its breakpoint overrides. Replaced the illustration with an uncropped, locally hosted real photo of the Three Pagodas/reflection, credited to Ngguls under CC BY-SA 4.0; source and February capture date documented in `CREDITS.md`. The image and caption now participate in normal flow above the trip facts.
+- Browser regression checks at 320, 390, 768, 1100 and 1440px passed that same geometry condition for `.cover-art img` and `.art-caption`; no horizontal page overflow at those widths.
+- Mobile guide body paragraphs now compute to 16px normally and 18px in larger mode; Pinyin is 16px, Thai place headings 18px. Retained IBM Plex Thai Looped for reading text and the loopless companion for display headings.
+- Browser verified the complete Chinese/Pinyin/Thai headings of all eight main destination cards, all eight photos loaded with natural aspect ratios, and no app console errors during local checks. Actual physical-phone/browser testing remains outstanding.
+- Service-worker cache version `tpj-v4` includes the new cover photo.
+- The Potala-style travel question is answered in chat from external sources; no Shangri-La destination or activity was added to the six-day baseline itinerary.
