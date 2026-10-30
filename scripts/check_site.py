@@ -40,3 +40,13 @@ for asset in list((root/'assets/fonts').glob('*.woff2'))+list((root/'assets/phot
 assert 'IBM Plex Sans Thai Looped' in css
 assert len({p['id'] for p in data['locations']})==len(data['locations'])
 print('PASS: trilingual place data, 8 credited JPEGs, WOFF2 fonts and offline asset coverage')
+
+import xml.etree.ElementTree as ET
+ns={'k':'http://www.opengis.net/kml/2.2'}
+extra=ET.parse(root/'Songzanlin_2026_Addition.kml')
+assert len(extra.findall('.//k:Placemark',ns))==1
+assert extra.find('.//k:coordinates',ns).text=='99.70417,27.86333,0'
+assert 'Sōngzànlín Sì' in extra.find('.//k:Placemark/k:name',ns).text
+assert 'Songzanlin_2026_Addition.kml' in sw
+assert 'route-options' in s.ids
+print('PASS: one-point Songzanlin KML and route-options anchor')

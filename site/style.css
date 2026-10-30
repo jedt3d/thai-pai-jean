@@ -16,3 +16,5 @@ body.large .place-photo figcaption{font-size:14px}body.large .photo-note{font-si
 body.large :is(.event p,.shot-card p,.stay-list p,details p,.two-notes p,.camera-layout p,.map-detail p,.map-external p:not(.eyebrow),.offline-box p:not(.eyebrow),.notice,.section-intro,.check-row,.budget-row,.sources li){font-size:18px}
 body.large :is(.art-caption,.caption,.note,.place-photo figcaption,.text-link,.event time,.pill){font-size:15px}
 @media(max-width:600px){.cover-art{align-self:stretch}.cover-facts{gap:8px}.cover-facts b{font-size:15px}.art-caption{padding:16px 22px}.cover-sub{font-size:19px}.edition{font-size:10px}}
+
+.table-scroll{max-width:100%;overflow-x:auto;margin:22px 0}.table-scroll table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.8}.table-scroll th,.table-scroll td{padding:14px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.table-scroll th{background:#e8ece3;font-weight:600}.table-scroll td:first-child{min-width:85px}.table-scroll table{min-width:610px}#route-options>p{font-size:16px}#route-options .notice p{font-size:16px}body.large .table-scroll table{font-size:17px}

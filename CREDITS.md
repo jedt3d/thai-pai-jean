@@ -86,3 +86,12 @@ Self-hosted original WOFF2 files from https://github.com/IBM/plex/tree/master/pa
 - Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 - Taken: 2026-02-23 16:23:51
 - Commons thumbnail, displayed uncropped. Reference scene, not a promise of December weather or reflection.
+
+## Current cover: 松赞林寺 / Sōngzànlín Sì / วัดซงจ้านหลิน
+
+- File: `assets/photos/cover-songzanlin.jpg`
+- Author: 瑞丽江的河水
+- Source: https://commons.wikimedia.org/wiki/File:%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA_-_%E5%85%A8%E6%99%AF_-_2025-05-07_09_(cropped).jpg
+- Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Captured: 2025-05-07 16:52:40
+- Commons featured panorama (the supplied Commons file is already cropped); displayed at its supplied aspect ratio, resized by Commons, no further crop. May 2025 reference scene, not a December forecast.

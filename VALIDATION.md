@@ -51,3 +51,15 @@
 - Browser verified the complete Chinese/Pinyin/Thai headings of all eight main destination cards, all eight photos loaded with natural aspect ratios, and no app console errors during local checks. Actual physical-phone/browser testing remains outstanding.
 - Service-worker cache version `tpj-v4` includes the new cover photo.
 - The Potala-style travel question is answered in chat from external sources; no Shangri-La destination or activity was added to the six-day baseline itinerary.
+
+## Songzanlin as the new primary target — comparison stage
+
+- User requested a 6-day versus 8-day comparison before choosing; no final route length or return date was selected. Kept `site/data.js` (36 original events) and the original nine-point KML unchanged, and clearly labelled the old timetable/accommodation/budget for comparison.
+- Added detailed static proposals for 11–16 and 11–18 December in the site and downloadable guide. Both retain an overnight in Kunming before the international return. The 6-day proposal trims Dali to one night; the 8-day proposal has Dali two nights and Shangri-La three nights, with a light day and another monastery photo opportunity. Times are planning targets, not verified December trains. The original THB 50,000 envelope is explicitly unvalidated for the revised routes.
+- New cover: Wikimedia Commons featured panorama of Songzanlin, by 瑞丽江的河水, CC BY-SA 4.0, captured 7 May 2025. Hosted locally, natural supplied aspect ratio, no extra crop. Credits and source are in `CREDITS.md`.
+- Read current official Yunnan tourism description for the monastery/lake/elevation and CDC altitude guidance. Proposals acknowledge rapid ascent; extra nights do not guarantee acclimatization. Railway durations are contextual references; actual trains, opening/access, fares and bookings remain unconfirmed.
+- Google Drive metadata confirmed the canonical ID is the My Maps file “เที่ยวจีน ธค 2026”. Used the signed-in Chrome editor to add one layer and one trilingual Songzanlin reference marker. All nine original markers remained visible. UI showed “All changes saved in Drive”; reloading retained the new layer and marker.
+- Google name search returned a city-centre listing inconsistent with the physical monastery reference. Did not add that listing. Used the documented WGS84 reference 27.86333,99.70417, labelled as monastery area, not a verified ticket office/vehicle entrance. Added sources in the marker description.
+- `Songzanlin_2026_Addition.kml` contains only the new reference point; it is provided as a portable copy, not needed to duplicate the already-added live marker.
+- Local browser checks at 320,390,768,1440px: new cover loaded, no overlap of cover/caption with facts, no horizontal page overflow. Comparison tables scroll within their own containers. Both proposal tables rendered six/eight rows respectively. Existing app structural and JavaScript syntax checks passed.
+- Cache version is `tpj-v5`; new cover and supplemental KML are cached. Main itinerary model remains six original days until the user selects the replacement plan.
