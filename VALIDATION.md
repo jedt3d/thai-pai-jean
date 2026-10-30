@@ -71,3 +71,11 @@
 - Removed obsolete six-versus-eight-day proposal from active HTML/guide. Historical Dali appendix/cards remain explicitly outside current trip. Checklist uses a new storage key to avoid reusing completed tasks with different meanings.
 - Local browser: six date tabs 9–14; 12 Dec renders Songzanlin; six core rows and three extension rows; nine credited photo cards. At 390 and 1440 viewport widths, page does not overflow; caption remains above trip facts. No browser errors.
 - Structural, asset, font, KML and JavaScript checks pass. Actual December trains/flights, room prices and revised budget are not confirmed.
+
+## 30 Oct 2026 · landscape priorities and proposed Fujifilm kit
+
+- Added photo-priority before route-options and linked from index/mobile navigation. Songzanlin remains first; Napahai is an optional replacement for the late temple return on 12 Dec, conditional on getting the main image and fitness.
+- Active itinerary and gear references use X-H2/X-H2S, original 16–55, 50–140/1.4x and proposed 33 F1.4. User clarified original 10–24 and the concern is resolving detail on 40MP, rather than compatibility. No lens sharpness tests are claimed.
+- Gear table addresses all proposed lenses, tripod options and Rotation 34L. Body resolution, Pixel Shift workflow and known weights cite manufacturers. CB259CFK has not been positively matched to TCBC15FS20PROC, so its weight is conditional rather than copied across. No purchase/final packing choice claimed.
+- Existing checklist progress is preserved; appended gear tests are new unchecked tasks. Historical guide appendix remains labeled historical.
+- Browser local: photo-priority precedes route-options; nine gear comparison rows; 390px viewport scroll width 375px, table 331px with internal 610px scroll; 1440px viewport scroll width 1425px. Day 12 shows Fujifilm and conditional Napahai. No console errors.
