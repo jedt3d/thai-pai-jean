@@ -79,3 +79,5 @@
 - Gear table addresses all proposed lenses, tripod options and Rotation 34L. Body resolution, Pixel Shift workflow and known weights cite manufacturers. CB259CFK has not been positively matched to TCBC15FS20PROC, so its weight is conditional rather than copied across. No purchase/final packing choice claimed.
 - Existing checklist progress is preserved; appended gear tests are new unchecked tasks. Historical guide appendix remains labeled historical.
 - Browser local: photo-priority precedes route-options; nine gear comparison rows; 390px viewport scroll width 375px, table 331px with internal 610px scroll; 1440px viewport scroll width 1425px. Day 12 shows Fujifilm and conditional Napahai. No console errors.
+
+- Follow-up: user prefers actual portrait results from 50 F1.0 / 90 F2 over 33 F1.4. Recommendation revised to 90 F2 (50 F1.0 as alternative), with 33 optional for street/low light rather than a mandatory portrait lens.
